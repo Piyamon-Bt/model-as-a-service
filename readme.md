@@ -45,7 +45,7 @@ docker run --rm -p 5001:5001 ds-ml-service
 ### ผ่าน terminal
 ใช้ curl ใน bash/zsh เนื่องจาก macos ไม่มี PowerShell
 ```bash
-curl -X POST "http://127.0.0.1:5001/predict" \
+curl -i -X POST "http://127.0.0.1:5001/predict" \
   -H "Content-Type: application/json" \
   -d '{"features":[8.3,25.0,6.0,1.0,1200,3.0,34.2,-118.3]}'
 ```
